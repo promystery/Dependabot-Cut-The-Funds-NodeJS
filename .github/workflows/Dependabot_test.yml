@@ -1,0 +1,10 @@
+name: Dependabot_test
+on: pull_request
+
+jobs:
+  dependabot:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - name: Run a one-line script
+        run: echo Hello, world!
